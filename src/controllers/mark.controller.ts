@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { startConnection } from '../database';
 
-import { IMark } from 'interfaces/mark';
+import { IMark } from 'interfaces/mark.interface';
 
 export const getMark = async (req: Request, res: Response) => {
   const id = req.params.id;

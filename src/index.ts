@@ -4,6 +4,7 @@ import app from './app';
 
 function main() {
   app.listen(app.get('PORT'), () => {
+    console.clear();
     console.log(`Server on port ${app.get('PORT')}`);
   })
 

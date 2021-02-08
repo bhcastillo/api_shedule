@@ -8,6 +8,7 @@ dotenv_1.default.config();
 const app_1 = __importDefault(require("./app"));
 function main() {
     app_1.default.listen(app_1.default.get('PORT'), () => {
+        console.clear();
         console.log(`Server on port ${app_1.default.get('PORT')}`);
     });
 }
